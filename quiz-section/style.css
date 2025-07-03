@@ -1,0 +1,144 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Container card */
+.container {
+  background-color: white;
+  width: 90%;
+  max-width: 480px;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Headings */
+.hardness {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+/* Difficulty buttons container */
+.buttons-hardness {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Difficulty buttons */
+.difficulty {
+  flex: 1;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.difficulty:hover {
+  background-color: #d1f0e7;
+  color: #0b7959;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.difficulty.selected {
+  background: #0b7959;
+  color: white;
+  box-shadow: 0 8px 20px rgba(11,121,89,0.7);
+  transform: translateY(-3px);
+}
+
+/* Category select container */
+.buttons-category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttons-category label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  align-self: flex-start;
+}
+
+/* Category select */
+#category {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+#category:focus {
+  border-color: #0b7959;
+  box-shadow: 0 0 10px rgba(11,121,89,0.4);
+}
+
+/* Start button */
+#startBtn {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #0b7959;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(11,121,89,0.6);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+#startBtn:disabled {
+  background-color: #a0c9b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#startBtn:not(:disabled):hover {
+  background-color: #0f9d6e;
+  transform: translateY(-3px);
+}
+
+
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid #0b7959;
+  outline-offset: 2px;
+}

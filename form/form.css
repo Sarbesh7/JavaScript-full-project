@@ -1,0 +1,87 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #1e293b;
+}
+
+/* Center container */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form card */
+.form-container {
+  background-color: #e0f2f1;
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.form-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2563eb;
+}
